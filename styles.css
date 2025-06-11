@@ -70,28 +70,3 @@ p {
   box-shadow: 0 0 10px #00ff00;
 }
 
-.image-wrapper {
-  position: relative;
-  display: inline-block; /* shrink-wrap to image size */
-  max-width: 100%;
-}
-
-.image-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.945); /* black with 40% opacity */
-  pointer-events: none; /* so clicks go through */
-  border-radius: 4px; /* optional, if your image has rounded corners */
-  z-index: 2;
-}
-
-.azath-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #00ff00;
-  box-shadow: 0 0 10px #00ff00;
-  position: relative;
-  z-index: 1;
-}
